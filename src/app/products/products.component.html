@@ -1,0 +1,6 @@
+<ul>
+  <li *ngFor="let item of select('products') | async">
+    <app-product-item [product]="item"></app-product-item>
+  </li>
+</ul>
+

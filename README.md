@@ -1,27 +1,27 @@
-# AngularGraphql
+# Tools
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
+## Плагины IDE
+- [JS Graphql For Webstorm](https://plugins.jetbrains.com/plugin/8097-js-graphql)
+- [Apollo GraphQL for VSCode](https://marketplace.visualstudio.com/items?itemName=apollographql.vscode-apollo)
 
-## Development server
+## Аngular
+- [Local RxState](https://www.npmjs.com/package/ngx-rx-state)
+- [ngrx/component](https://ngrx.io/guide/component) (experimental)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## GraphQL
+- [Faker](https://github.com/APIs-guru/graphql-faker)
+- [Voyager](https://github.com/APIs-guru/graphql-voyager)
+- [Generator](https://graphql-code-generator.com/)
+- [Inspector](https://github.com/kamilkisiela/graphql-inspector)
 
-## Code scaffolding
+## Apollo
+- [Beta version for React](https://www.apollographql.com/docs/react/v3.0-beta)
+- [Stable version for Angular](https://www.apollographql.com/docs/angular/)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# Install Apollo
+- `yarn global add graphql-faker`
+- `yarn add graphql graphql-tag @apollo/client@latest apollo-angular@2.0.0-beta.2 @graphql-codegen/cli @graphql-codegen/fragment-matcher @graphql-codegen/typescript @graphql-codegen/typescript-operations @graphql-codegen/typescript-resolvers @graphql-codegen/typescript-apollo-angular`
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+# Commands
+- `yarn graphql-codegen -c src/codegen.yml --watch`
+- `graphql-faker -p 9000`

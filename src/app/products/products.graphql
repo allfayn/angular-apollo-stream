@@ -1,0 +1,18 @@
+fragment Products on Product {
+  ...ProductItem
+  description
+}
+
+fragment ProductsTag on Tag {
+  id
+  name
+}
+
+query GetProducts {
+  products {
+    ...Products
+  }
+  tags {
+    ...ProductsTag
+  }
+}

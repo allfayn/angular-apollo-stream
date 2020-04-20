@@ -1,0 +1,16 @@
+{
+  "name": "Workshop GraphQL Schema",
+  "schemaPath": "src/schema.graphql",
+  "includes": ["src/**"],
+  "extensions": {
+    "endpoints": {
+      "app": {
+        "url": "http://localhost:9000/graphql",
+        "headers": {
+          "user-agent": "JS GraphQL"
+        },
+        "introspect": true
+      }
+    }
+  }
+}

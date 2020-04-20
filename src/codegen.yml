@@ -1,0 +1,28 @@
+overwrite: true
+schema:
+  - http://localhost:9000/graphql
+generates:
+  src/app/types-generated.ts:
+    documents: src/app/**/*.graphql
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-resolvers
+      - typescript-apollo-angular
+  src/app/introspection-generated.ts:
+    plugins:
+      - fragment-matcher
+    config:
+      apolloClientVersion: 3
+config:
+  typesPrefix: ''
+  scalars:
+    DateTime: Date
+  declarationKind:
+    scalar: interface
+    input: interface
+    type: interface
+    arguments: interface
+    interface: interface
+    union: type
+  apolloClientVersion: 3
