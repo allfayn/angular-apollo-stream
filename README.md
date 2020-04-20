@@ -1,6 +1,9 @@
+# Stream
+- [Base Architecture](https://youtu.be/F-RKfWxhSac)
+
 # Tools
 
-## Плагины IDE
+## IDE Plugins
 - [JS Graphql For Webstorm](https://plugins.jetbrains.com/plugin/8097-js-graphql)
 - [Apollo GraphQL for VSCode](https://marketplace.visualstudio.com/items?itemName=apollographql.vscode-apollo)
 
