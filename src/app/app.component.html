@@ -1,1 +1,9 @@
-<app-products></app-products>
+<app-header></app-header>
+<mat-grid-list cols="2" [rowHeight]="'100%'">
+  <mat-grid-tile [style.background]="'gray'">
+    <app-result></app-result>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <app-search-view></app-search-view>
+  </mat-grid-tile>
+</mat-grid-list>

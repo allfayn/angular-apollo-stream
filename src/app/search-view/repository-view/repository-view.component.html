@@ -1,0 +1,11 @@
+<mat-card>
+  <mat-card-content>
+    {{repository.owner.login}}
+    <img src="{{repository.owner.avatarUrl}}" alt="">
+  </mat-card-content>
+</mat-card>
+<ul>
+  <li *ngFor="let commit of repository.commitComments.nodes">
+    <span>{{commit.author.login}}({{commit.commit.committedDate}}):{{commit.commit.message}}</span>
+  </li>
+</ul>

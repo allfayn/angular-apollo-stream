@@ -1,0 +1,9 @@
+fragment SearchRepositoryView on Repository {
+  ...RepositoryView
+}
+
+query getRepository($name: String!, $owner: String!) {
+  repository(name: $name, owner: $owner) {
+    ...SearchRepositoryView
+  }
+}

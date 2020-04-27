@@ -1,9 +1,0 @@
-fragment ProductItem on Product {
-  id
-  name
-  image
-  price
-  tags {
-    name
-  }
-}

@@ -1,9 +1,12 @@
 overwrite: true
 schema:
-  - http://localhost:9000/graphql
+  - https://api.github.com/graphql:
+      headers:
+        Authorization: Bearer ${GITHUB_ACCESS_TOKEN}
+  - src/app/schema.ts
 generates:
   src/app/types-generated.ts:
-    documents: src/app/**/*.graphql
+    documents: src/app/**/*.{graphql, ts}
     plugins:
       - typescript
       - typescript-operations

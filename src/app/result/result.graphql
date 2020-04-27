@@ -1,0 +1,26 @@
+fragment SearchResultRepository on Repository {
+  id
+  name
+  owner {
+    login
+  }
+}
+
+fragment SearchResult on SearchResultItem {
+  ...SearchResultRepository
+  ...RepositoryItem
+}
+
+query Search($search: String!, $first: Int!, $type: SearchType!) {
+  search(query: $search, type: $type, first: $first) {
+    nodes {
+      ...SearchResult
+    }
+    pageInfo {
+      hasNextPage
+      endCursor
+      startCursor
+    }
+    repositoryCount
+  }
+}

@@ -1,0 +1,15 @@
+mutation setState($input: StateInput) {
+  setState(input: $input) @client {
+    repositoryId
+    repositoryName
+    repositoryOwner
+  }
+}
+
+query getState {
+  state @client {
+    repositoryId
+    repositoryName
+    repositoryOwner
+  }
+}

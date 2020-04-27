@@ -1,0 +1,3 @@
+<div *ngFor="let item of state.select('list') | async">
+  <app-repository-item [item]="item" (click)="state.setRepository(item)"></app-repository-item>
+</div>
