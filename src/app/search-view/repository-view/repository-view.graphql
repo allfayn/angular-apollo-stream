@@ -1,0 +1,23 @@
+fragment RepositoryView on Repository {
+  id
+  commitComments(first: 10) {
+    totalCount
+    nodes {
+      author {
+        login
+      }
+      body
+      commit {
+        committedDate
+        message
+      }
+    }
+  }
+  owner {
+    avatarUrl(size: 50)
+    login
+    repositories {
+      totalCount
+    }
+  }
+}

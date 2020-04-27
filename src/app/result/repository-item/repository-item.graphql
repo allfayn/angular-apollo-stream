@@ -1,0 +1,6 @@
+fragment RepositoryItem on Repository {
+  id
+  nameWithOwner
+  createdAt
+  forkCount
+}
